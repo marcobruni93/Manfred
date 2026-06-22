@@ -85,9 +85,6 @@ export function Navbar() {
             ))}
           </div>
 
-          <Button variant="ghost" className="text-slate-300 hover:text-white hover:bg-violet-900/30" asChild>
-            <Link href="/login">{t.nav.login}</Link>
-          </Button>
           <Button
             className="glow-btn bg-violet-600 hover:bg-violet-500 text-white border-0 px-5"
             asChild
@@ -144,9 +141,6 @@ export function Navbar() {
               </div>
 
               <div className="flex flex-col gap-2 pt-4 border-t border-violet-900/30">
-                <Button variant="outline" className="border-violet-800 text-slate-300 hover:text-white" asChild>
-                  <Link href="/login">{t.nav.login}</Link>
-                </Button>
                 <Button className="bg-violet-600 hover:bg-violet-500 text-white" asChild>
                   <Link href="/contact#contact-form">{t.nav.startFree}</Link>
                 </Button>

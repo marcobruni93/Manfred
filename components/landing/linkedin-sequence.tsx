@@ -144,7 +144,7 @@ export function LinkedInSequence() {
             {t.sequence.bottomText}
           </p>
           <a
-            href="/register"
+            href="/contact#contact-form"
             className="glow-btn inline-flex items-center gap-2 rounded-xl bg-violet-600 px-8 py-4 text-base font-semibold text-white hover:bg-violet-500 transition-all duration-200"
           >
             <Linkedin className="h-4 w-4" />

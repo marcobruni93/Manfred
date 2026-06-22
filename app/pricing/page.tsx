@@ -135,7 +135,7 @@ export default function PricingPage() {
                       variant={plan.popular ? "default" : "outline"}
                       asChild
                     >
-                      <Link href={plan.name === "Enterprise" ? "#" : "/register"}>
+                      <Link href="/contact#contact-form">
                         {plan.cta}
                       </Link>
                     </Button>
