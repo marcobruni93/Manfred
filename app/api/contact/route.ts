@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-const WEBHOOK_URL = "https://n8n-hetzner.bewpot.com/webhook-test/eafad639-38a6-4cb8-a943-c786f5a516bb";
+const WEBHOOK_URL = "https://n8n-hetzner.bewpot.com/webhook/eafad639-38a6-4cb8-a943-c786f5a516bb";
 
 export async function POST(request: Request) {
   const payload = await request.json();
