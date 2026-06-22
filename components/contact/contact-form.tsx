@@ -107,8 +107,8 @@ export function ContactForm() {
   }
 
   return (
-    <form id="contact-form" onSubmit={handleSubmit} className="rounded-[2rem] border border-violet-500/20 bg-white/[0.03] p-5 shadow-2xl shadow-violet-950/30 backdrop-blur-xl sm:p-8">
-      <div className="grid gap-5 sm:grid-cols-2">
+    <form id="contact-form" onSubmit={handleSubmit} className="rounded-2xl border border-violet-500/20 bg-white/[0.03] p-4 shadow-2xl shadow-violet-950/30 backdrop-blur-xl sm:rounded-[2rem] sm:p-8">
+      <div className="grid gap-4 sm:grid-cols-2 sm:gap-5">
         <label className="space-y-2 text-sm font-semibold text-slate-200">
           {c.firstName}
           <Input name="nome" required placeholder={c.firstNamePlaceholder} className="h-12 border-violet-500/20 bg-[#09090d] text-white placeholder:text-slate-600 focus-visible:ring-violet-500" />
@@ -135,7 +135,7 @@ export function ContactForm() {
         </label>
       </div>
 
-      <Button type="submit" disabled={status === "loading"} className="mt-7 h-12 w-full rounded-xl bg-violet-600 text-base font-bold text-white hover:bg-violet-500">
+      <Button type="submit" disabled={status === "loading"} className="mt-6 h-12 w-full rounded-xl bg-violet-600 px-3 text-sm font-bold text-white hover:bg-violet-500 sm:mt-7 sm:text-base">
         {status === "loading" ? (
           <>
             <Loader2 className="h-4 w-4 animate-spin" /> {c.loading}

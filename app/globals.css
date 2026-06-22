@@ -36,11 +36,16 @@
 
 @layer base {
   * { @apply border-border; }
+  html, body { max-width: 100%; overflow-x: hidden; }
   body { @apply bg-background text-foreground antialiased; }
   ::selection {
     background-color: rgba(124, 58, 237, 0.45);
     color: #ffffff;
   }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
 }
 
 /* ── Fluid type scale ── */

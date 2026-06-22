@@ -43,13 +43,13 @@ export function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="container flex h-16 items-center justify-between max-w-7xl mx-auto px-6">
+      <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 group">
           <div className="relative h-9 w-9 rounded-xl border border-violet-400/35 bg-transparent flex items-center justify-center transition-all group-hover:scale-105 group-hover:border-violet-400/60 shadow-[0_0_14px_rgba(124,58,237,0.25),inset_0_0_0_1px_rgba(167,139,250,0.08)]">
             <img src="/logo-transparent.png" alt="Manfred" className="h-7 w-7 object-contain" />
           </div>
-          <span className="font-bold text-lg text-white tracking-tight">Manfred</span>
+            <span className="text-base font-bold tracking-tight text-white sm:text-lg">Manfred</span>
         </Link>
 
         {/* Desktop nav */}
@@ -111,7 +111,7 @@ export function Navbar() {
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden border-t border-violet-900/30 bg-[#050507]/95 backdrop-blur-xl"
           >
-            <div className="container px-6 py-6 flex flex-col gap-4">
+            <div className="container flex flex-col gap-4 px-4 py-6 sm:px-6">
               {navLinks.map((item) => (
                 <Link
                   key={item.label}

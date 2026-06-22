@@ -68,21 +68,21 @@ export function ContactPageContent() {
   const c = copy[lang];
 
   return (
-    <main className="relative overflow-hidden pt-28">
-      <div className="pointer-events-none absolute left-1/2 top-0 h-[520px] w-[900px] -translate-x-1/2 rounded-full bg-violet-600/15 blur-[130px]" />
+    <main className="relative overflow-hidden pt-20 sm:pt-28">
+      <div className="pointer-events-none absolute left-1/2 top-0 h-[360px] w-[520px] -translate-x-1/2 rounded-full bg-violet-600/15 blur-[100px] sm:h-[520px] sm:w-[900px] sm:blur-[130px]" />
       <div className="pointer-events-none absolute -right-32 top-80 h-72 w-72 rounded-full bg-fuchsia-500/10 blur-[90px]" />
 
-      <section className="relative mx-auto grid max-w-7xl gap-12 px-6 pb-24 pt-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-        <div>
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-violet-400/25 bg-violet-500/10 px-4 py-2 text-sm font-semibold text-violet-200">
+      <section className="relative mx-auto grid max-w-7xl gap-10 px-4 pb-16 pt-8 sm:px-6 sm:pb-24 sm:pt-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+        <div className="min-w-0">
+          <div className="mb-5 inline-flex max-w-full items-center gap-2 rounded-full border border-violet-400/25 bg-violet-500/10 px-3 py-2 text-xs font-semibold text-violet-200 sm:mb-6 sm:px-4 sm:text-sm">
             <Sparkles className="h-4 w-4" /> {c.badge}
           </div>
 
-          <h1 className="max-w-4xl text-5xl font-black leading-[0.95] tracking-tight text-white sm:text-6xl lg:text-7xl">
+          <h1 className="text-balance max-w-4xl text-[2.6rem] font-black leading-[1] tracking-tight text-white sm:text-6xl lg:text-7xl">
             {c.h1}
           </h1>
 
-          <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
+          <p className="mt-6 max-w-2xl text-base leading-7 text-slate-300 sm:mt-7 sm:text-xl sm:leading-8">
             {c.sub}
           </p>
 
@@ -109,12 +109,12 @@ export function ContactPageContent() {
           </div>
         </div>
 
-        <div className="relative">
-          <div className="absolute -inset-4 rounded-[2.5rem] bg-gradient-to-br from-violet-600/30 via-fuchsia-500/10 to-transparent blur-2xl" />
+        <div className="relative min-w-0">
+          <div className="absolute -inset-2 rounded-[2rem] bg-gradient-to-br from-violet-600/30 via-fuchsia-500/10 to-transparent blur-2xl sm:-inset-4 sm:rounded-[2.5rem]" />
           <div className="relative">
-            <div className="mb-5 rounded-3xl border border-violet-500/20 bg-violet-950/20 p-5">
-              <p className="text-sm font-bold uppercase tracking-[0.25em] text-violet-300">{c.kicker}</p>
-              <h2 className="mt-3 text-3xl font-black text-white">{c.formTitle}</h2>
+            <div className="mb-4 rounded-2xl border border-violet-500/20 bg-violet-950/20 p-4 sm:mb-5 sm:rounded-3xl sm:p-5">
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-violet-300 sm:text-sm sm:tracking-[0.25em]">{c.kicker}</p>
+              <h2 className="mt-3 text-2xl font-black text-white sm:text-3xl">{c.formTitle}</h2>
               <p className="mt-3 text-sm leading-6 text-slate-400">{c.formSub}</p>
             </div>
             <ContactForm />

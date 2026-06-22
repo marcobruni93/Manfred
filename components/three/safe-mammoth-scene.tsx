@@ -32,7 +32,7 @@ export function SafeMammothScene() {
 function MammothFallback() {
   return (
     <div className="absolute inset-0 flex items-center justify-center opacity-25">
-      <div className="relative h-[28rem] w-[28rem] rounded-full border border-violet-500/20 bg-violet-950/20">
+      <div className="relative h-[18rem] w-[18rem] rounded-full border border-violet-500/20 bg-violet-950/20 sm:h-[28rem] sm:w-[28rem]">
         <div className="absolute inset-10 rounded-full border border-violet-400/20" />
         <div className="absolute inset-24 rounded-full bg-violet-500/20 blur-3xl" />
         <img
