@@ -1,24 +1,25 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import { useLang } from "@/contexts/language-context";
-
-const MammothScene = dynamic(
-  () => import("@/components/three/mammoth-scene"),
-  { ssr: false }
-);
 
 export function Hero() {
   const { t } = useLang();
 
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden scanlines">
-      {/* 3D Mammoth canvas */}
-      <div className="absolute inset-0 z-0">
-        <MammothScene />
+      <div className="absolute inset-0 z-0 flex items-center justify-center opacity-25">
+        <div className="relative h-[28rem] w-[28rem] rounded-full border border-violet-500/20 bg-violet-950/20 blur-0">
+          <div className="absolute inset-10 rounded-full border border-violet-400/20" />
+          <div className="absolute inset-24 rounded-full bg-violet-500/20 blur-3xl" />
+          <img
+            src="/logo-transparent.png"
+            alt=""
+            className="absolute left-1/2 top-1/2 h-40 w-40 -translate-x-1/2 -translate-y-1/2 object-contain opacity-80 drop-shadow-[0_0_60px_rgba(124,58,237,0.8)]"
+          />
+        </div>
       </div>
 
       {/* Aurora orbs */}
